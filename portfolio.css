@@ -8,7 +8,7 @@ body {
 /*HEADING 1*/
 h1 {
     text-transform: uppercase;
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: Comic Sans MS, Comic Sans, sans-serif;
     text-align: center;
     margin-top: 3%;
     color: rgb(255, 255, 255);
@@ -252,7 +252,7 @@ input[type=text] {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: Comic Sans MS, Comic Sans, sans-serif;
 }
 
 /*INPUT BOXES HOVER*/
@@ -272,7 +272,7 @@ input[type=submit] {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: Comic Sans MS, Comic Sans, sans-serif;
 }
 
 /*SUBMIT BUTTON HOVER*/
@@ -288,5 +288,5 @@ form {
     border-radius: 5px;
     background-color: rgb(114, 114, 114);
     padding: 10px;
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: Comic Sans MS, Comic Sans, sans-serif;
 }
