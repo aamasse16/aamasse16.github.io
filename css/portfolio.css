@@ -11,7 +11,7 @@ h1 {
     font-family: Comic Sans MS, Comic Sans, cursive;
     text-align: center;
     margin-top: 3%;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 /*HEADING 1 HOVER EFFECTS*/
@@ -34,7 +34,6 @@ p {
     font-size: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    color: rgb(255, 255, 255);
 }
 
 /*PARAGRAPH HOVER*/
@@ -204,9 +203,9 @@ footer {
     float: left;
     width: 50%;
     padding: 10px;
-    padding-top: 0%;
+    padding-top: 3%;
     height: 400px;
-    background-color: rgb(124, 155, 255);
+    background-color: rgb(102, 102, 110);
 }
 
 @media screen and (max-width: 576px) {
@@ -219,14 +218,14 @@ footer {
     float: left;
     width: 50%;
     padding: 10px;
-    padding-top: 2%;
+    padding-top: 1.9%;
     height: 400px;
-    background-color: rgb(150, 150, 150);
+    background-color: rgb(109, 133, 72);
 }
 
 /*COLUMN TALL IS FOR THE LAST 2 COLUMNMS*/
 .column-tall {
-    padding-top: -3%;
+    padding-top: 3.5%;
     height: 450px;
 }
 
@@ -244,7 +243,7 @@ footer {
 input[type=text] {
     width: 100%;
     padding: 12px;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(109, 133, 72);
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
@@ -284,7 +283,7 @@ input[type=submit]:hover {
 /*FORM*/
 form {
     border-radius: 5px;
-    background-color: rgb(114, 114, 114);
+    background-color: rgb(209, 143, 143);
     padding: 10px;
     font-family: Comic Sans MS, Comic Sans, cursive;
 }
