@@ -162,9 +162,11 @@ footer {
 
 /*BACKGROUND VID FORMAT*/
 #typing-video {
-    position: fixed;
+    position: absolute;
+    top: 0px;
+    left: 5px;
     right: 0;
-    bottom: 0;
+    bottom: 9px;
     min-width: 100%;
     z-index: -1;
 }
