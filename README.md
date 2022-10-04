@@ -1,3 +1,3 @@
 # Portfolio
 
-This is the code I will make and utilize for my portfolio website.
+In this repository you will see all of the code I wrote in order to create my webiste you can now visit that website here aamasse16.github.io
