@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title>Aaron Masse</title>
     <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <script src="portfolio.js" defer></script>
     <!--END HEAD-->
 
     <!--BODY-->
@@ -13,13 +14,12 @@
         <!--NAVBAR-->
         <div class="navbar">
             <a class="active" href="#home">Home</a>
+            <a href="#slideshow">Slideshow</a>
             <a href="#about">About</a>
             <a href="#github">GitHub</a>
-            <a href="#contact">Contact</a>
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
         </div>
         <!--END NAVBAR-->
-        <br>
-        <br>
 
         <!--BACKGROUND VIDEO-->
         <div id="home">
@@ -47,6 +47,52 @@
         </div>
         <!--END VIDEO TEXT-->
 
+        <!--Slideshow section (added)-->
+        <div id="slideshow">
+            <div id="slideshow_background">
+                <div id="slideshow_container">
+                    <!--slide 1-->
+                    <div class="mySlides fade">
+                        <img src="images/image_1.jpeg" class="slideshow_images" alt="Picture of me">
+                        <div class="text">I am excited to assist you on your project!</div>
+                    </div>
+                    <!--slide 2-->
+                    <div class="mySlides fade">
+                        <img src="images/3_logos.jpg" class="slideshow_images" alt="HTML, CSS  and JS logos">
+                        <div class="text">I am excited to assist you on your project!</div>
+                    </div>
+                    <!--slide 3-->
+                    <div class="mySlides fade">
+                        <img src="images/csharp_logo.png" class="slideshow_images" alt="C# logo">
+                        <div class="text">I am excited to assist you on your project!</div>
+                    </div>
+                    <!--slide 4-->
+                    <div class="mySlides fade">
+                        <img src="images/SQL_logo.jpg" class="slideshow_images" alt="SQL">
+                        <div class="text">I am excited to assist you on your project!</div>
+                    </div>
+                    <!--slide 5-->
+                    <div class="mySlides fade">
+                        <img src="images/Contact.jpg" class="slideshow_images" alt="Contact Me">
+                        <div class="text"><a class="white-text contact" onclick="openForm()">I am excited to assist you on your project!</a></div>
+                    </div>
+                    <!--next/prev buttons-->
+                    <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!--Add space between slideshow and dots-->
+
+                <!--Dots-->
+                <div style="text-align: center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+        </div>
+
         <!--ABOUT SECTION-->
         <div class="row" id="about">
             <!--LEFT COLUMN-->
@@ -57,9 +103,8 @@
             <div class="column-1">
                 <h1>About</h1>
                 <p>
-                    I am a software developer with a passion for the feild.
-                    <br>
-                    <br>In 2022 I left a very secure job working as a HVAC tech for my fathers company. Started my bootcamp at <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a>.
+
+                    In 2022 I left a very secure job working as a HVAC tech for my fathers company. Started my bootcamp at <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a>.
                     I took the c# and .NET bootcamp and im experienced in HTML, CSS, JavaScript, SQL, C#, and more!
                     <br>
                     <br>I am a full stack developer that would love to work on a project with you! <a href="#contact">Contact</a> me below!
@@ -73,8 +118,7 @@
             <!--LEFT COLUMN-->
             <div class="column-1">
                 <h1>GitHub</h1>
-                <p>
-                    You can take a look at my coding projects via GitHub here:
+                <p>You can take a look at my coding projects via GitHub here:
                     <br>
                     <p class="center"><a href="https://github.com/aamasse16" target="_blank">Aaron Masse's GitHub</a></p>
                 </p>
@@ -86,24 +130,23 @@
          </div>
          <!--GITHUB END-->
 
-        <!--CONTACT-->
-        <div class="row" id="contact">
-            <!--CONTACT IMAGE-->
-            <div class="column-2 column-tall">
-                <img src="./images/contact_me.jpg" alt="contact image">
-            </div>
-            <!--CONTACT FORM-->
-            <div class="column-1 column-tall">
-                <h1>Contact</h1>
-                <form action="https://formspree.io/f/maykeodv" method="POST">
+        <!--CONTACT form-->
+        <div id="contact">
+            <button onclick="openForm()" class="pop_up_button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="" method="POST" class="form-container">
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Type your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                        <input type="text" placeholder="Type your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Type your email here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                        <input type="text" placeholder="Type your message here" name="message">
 
-                    <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
-                        <input type="text" id="email" name="Email" placeholder="Please enter your email here">
-                    <label>Message</label>
-                        <input type="text" name="Message" id="message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                 </form>
             </div>
         </div>
